@@ -16,6 +16,10 @@ RUN apt-get update && \
     libav-tools \
     rsyslog \
     logrotate && \
+    python-dev && \
+    libssl-dev && \
+    openssl && \
+    rustc && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
